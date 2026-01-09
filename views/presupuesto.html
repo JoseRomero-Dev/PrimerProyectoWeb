@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>PixelNova | Presupuesto</title>
+</head>
+<body>
+    <!--Header + Navegación-->
+    <header>
+        <!--Imagen de cabecera con logotipo de la empresa-->
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/image/logo-pixelnova3.png" alt="Logo PixelNova - Diseño Web">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="presupuesto.html" class="activo">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="presupuesto">
+            <h2>Solicita tu presupuesto</h2>
+            <p>Rellena el siguiente formulario y nos pondremos en contacto contigo.</p>
+            <!--Creamos el formulario-->
+            <form action="#" method="post" class="form-presupuesto">
+                <!--Campo para nombre del usuario solicitante-->
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre Apellido Apellido" required>
+                <!--Campo para el email del solicitante-->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="correo@correo.es" required>
+                <!--Campo para el teléfono-->
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" placeholder="000 00 00 00" required>
+                <!--Campo para mensaje-->
+                <label for="mensaje">Solicite más información</label>
+                <textarea id="mensaje" name="mensaje" cols="5" rows="3" placeholder="Escriba aquí"></textarea>
+                <!--Campo para política de privacidad-->
+                <label class="privacidad">
+                    <input type="checkbox" required>
+                    Acepto la política de privacidad
+                </label>
+                <!--Creamos los botones para enviar y resetear el formulario-->
+                <div class="botones_formulario">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="redes">
+            <a href="#">Instagram</a>
+            <a href="#">X</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <p>Calle Ficticia 123, Sevilla</p>
+        <p>2025 PixelNova - Aviso legal</p>
+    </footer>
+</body>
+</html>
