@@ -142,14 +142,22 @@ footer {
     text-align: center;
 }
 
+footer .redes{
+    margin-bottom: 15px;
+}
+
 footer .redes a {
-    color: #1abc9c;
     margin: 0 10px;
-    text-decoration: none;
+    display: inline-block;
+}
+
+footer .redes img{
+    width: 40px;
+    height: 40px;
 }
 
 footer .redes a:hover {
-    text-decoration: underline;
+    transform: scale(1.1);
 }
 /*PRODUCTOS HTML*/
 .productos{
@@ -319,6 +327,7 @@ footer .redes a:hover {
     /*Pasamos de 3 a 2 columnas*/
     .servicios-contenedor{
         grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
     }
     /*Productos*/
     /*Cambiamos la galeria de productos a 2 columnas*/
