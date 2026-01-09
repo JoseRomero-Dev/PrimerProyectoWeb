@@ -34,10 +34,12 @@ nav ul{
 }
 
 nav a{
+    background-color: #c5c5c52c;
     text-decoration: none;
     color: #ffffff;
     font-size: 1rem;
     padding: 5px 10px;
+    /*Efecto*/
     transition: background-color 0.3s, color 0.3s;
     border-radius: 5px;
 }
