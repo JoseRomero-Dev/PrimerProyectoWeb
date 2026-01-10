@@ -359,7 +359,7 @@ footer .redes a:hover {
         flex-direction: column;
         gap: 15px;
         text-align: center;
-        padding: 15px 20px;
+        position: static;
     }
     /*Menú*/
     /*Las secciones del menú de navegación pasan a posición vertical*/
