@@ -13,14 +13,18 @@ body{
 
 /*Header y menu de navegación*/
 header{
+    /*Hacemos que el head sea sticky*/
     position: sticky;
     top: 0;
     z-index: 1000;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
     background-color: #0a2540;
+    /*Efecto de sombra para el header*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
 }
 /*Logotipo*/
 .logo img{
@@ -46,13 +50,13 @@ nav a{
     transition: background-color 0.3s, color 0.3s;
     border-radius: 5px;
 }
-
+/*Cambiamos el color del boton para cuando tenemos el cursor encima*/
 nav a:hover{
     background-color: #1abc9c;
     color: #0a2540;
     border-radius: 5px;
 }
-
+/*Resaltamos el botón del menu de la sección donde nos encontremos*/
 nav a.activo{
     background-color: #1abc9c;
     color: #0a2540;
@@ -98,7 +102,6 @@ background-color: #159a80;
     margin-bottom: 40px;
 }
 
-
 .servicios-contenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -107,7 +110,6 @@ background-color: #159a80;
     margin: 0 auto;
 }
 
-
 .servicios article {
     background-color: #f4f6f8;
     padding: 25px;
@@ -115,7 +117,6 @@ background-color: #159a80;
     border-radius: 8px;
     text-align: center;
 }
-
 
 /* VENTAJAS */
 .ventajas {
@@ -160,7 +161,7 @@ footer .redes img{
     width: 40px;
     height: 40px;
 }
-
+/*Efecto para cuando tengamos el cursor encima el logo se agrande un poco*/
 footer .redes a:hover {
     transform: scale(1.1);
 }
@@ -358,6 +359,7 @@ footer .redes a:hover {
         flex-direction: column;
         gap: 15px;
         text-align: center;
+        padding: 15px 20px;
     }
     /*Menú*/
     /*Las secciones del menú de navegación pasan a posición vertical*/
