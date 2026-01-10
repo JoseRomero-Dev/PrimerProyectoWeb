@@ -13,6 +13,9 @@ body{
 
 /*Header y menu de navegación*/
 header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -190,6 +193,7 @@ footer .redes a:hover {
 /*Ajustamos la imagenes*/
 .proyecto img{
     width: 100%;
+    height: auto;
     display: block;
 }
 /*Ajustamos el titulo y la descripción de cada imagen*/
@@ -302,6 +306,7 @@ footer .redes a:hover {
 }
 .mapa img{
     width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 /*Datos*/
